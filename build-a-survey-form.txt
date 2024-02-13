@@ -1,0 +1,150 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+     <link rel="stylesheet" href="styles.css" />
+  </head>
+  <div class="background">
+  <body>
+    <h1 id="title">Favourite Jojo's Bizzare Adventure Part</h1>
+    <p id="description">Which Jojo's part was your favourite?</p>
+    <form id="survey-form"
+    <fieldset>
+      <label id="name-label">Enter your name<input id="name" name="name" type="text" placeholder="Jotaro" required /></label>
+      <label id="email-label">Whats your Email<input id="email" name="email" type="email" placeholder="Kujo@mail.com" required /></label>
+      <label id="number-label">How old are you?(optional)<input id="number" name="age" type="number" min="13" max="120" placeholder="38" /></label>
+      </fieldset>
+      <fieldset>
+        <div id="favourite">
+        <legend>Which Part was your Favourite?</legend>
+        </div>
+           <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Part 1: Phantom Blood</option>
+            <option value="2">Part 2: Battle Tendency</option>
+            <option value="3">Part 3: Stardust Crusaders</option>
+            <option value="4">Part 4: Diamond is Unbreakable</option>
+            <option value="5">Part 5: Golden Wind</option>
+            <option value="6">Part 6: Stone Ocean</option>
+            <option value="7">Part 7: Stell Ball Run</option>
+            <option value="8">Part 8: Jojolion</option>
+           </select>
+      </fieldset>
+      <fieldset>
+        <legend>Do you prefer the Manga or Anime?</legend>
+         <label for="Manga"><input id="Manga" type="radio" name="preference" checked  value="Manga" class="inline">Manga</label>
+         <label for="Anime"><input id="Anime" type="radio" name="preference" value="Anime" class="inline">Anime</label>
+      </fieldset>
+     <fieldset>
+       <legend>Which of These Villians do you like?</legend>
+       <label for="Dio"><input id="Dio" type="checkbox" name="villians" class="inline" value="Dio" />Dio</label>
+       <label for="Pillar Men"><input id="Pillar Men" type="checkbox" name="villians" class="inline" value="Pillar Men" />Pillar Men</label>
+       <label for="Dio(Part 3)"><input id="Dio(Part 3)" type="checkbox" name="villians" class="inline" value="Dio(Part 3)" />Dio(Part 3)</label>
+       <label for="Kira"><input id="Kira" type="checkbox" name="villians" class="inline" value="Kira" />Kira</label>
+       <label for="Diavolo"><input id="Diavolo" type="checkbox" name="villians" class="inline" value="Diavolo" />Diavolo</label>
+       <label for="Pucci"><input id="Pucci" type="checkbox" name="villians" class="inline" value="Pucci" />Pucci</label>
+       <label for="Funny Valentine"><input id="Funny Valentine" type="checkbox" name="villians" class="inline" value="Funny Valentine" />Funny Valentine</label>
+       <label for="Tooru"><input id="Tooru" type="checkbox" name="villians" class="inline" value="Tooru" />Tooru</label>
+     </fieldset>
+     <fieldset>
+       <label for="side character">Favourite Side Character and Why:<textarea id="side character" name="side character" rows="4" cols="30" placeholder="Bucciarati is the best because..."></textarea>
+     </fieldset>
+     <button id="submit" >Submit</button>
+     </div>
+    </form>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  background-image: url(https://i.imgur.com/vf3IjDc.jpeg);
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #06414a;
+  color: white;
+  font-family: Tahoma;
+  font-size: 18px
+
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 80vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: 0 ; 
+  padding: 2rem 0 20 0;
+  border-bottom: 3px solid teal
+}
+
+label {
+  display: block;
+  margin: 3;
+}
+
+input, textarea, select {
+  margin: 7px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  border-radius: 7px;
+}
+
+input, textarea, select {
+  background-color: orange;
+  border: 2px solid white;
+  color: purple;
+  border-radius: 7px
+}
+.inline {
+  width: 25;
+  margin: 3 0.5em 0.5 2;
+  vertical-align: middle;
+}
+
+button {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1rem;
+  background-color: rgb(12, 86, 93);
+  border-color: orange(255, 251, 251);
+  min-width: 5px;
+  color: rgb(255, 255, 255);
+  border-radius: 7px;
+}
+
+.inline {
+  display: inline;
+}
+
+select {
+  background-color: orange;
+  color: purple;
+}
+
+.background {
+  background-color: rgba(55, 148, 163, 0.9);
+  margin: auto;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 20px
+}
+
+** end of undefined **
+
